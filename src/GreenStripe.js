@@ -1,5 +1,6 @@
 import React from "react";
-import './'
+import './GreenStripe.scss'
+
 const PERSON_KEY ='personkey'
 export const GreenStripe =() =>{
 
@@ -12,7 +13,8 @@ const onHandleWrite =()=>{
     }
 
 localStorage.setItem(PERSON_KEY,JSON.stringify(person))
-    const onHandleReid =()=>{
+}
+    const onHandleRead =()=>{
 const p = JSON.parse(localStorage.getItem(PERSON_KEY))
 console.log (p)
     
@@ -23,7 +25,7 @@ console.log (p)
 <div className="GreenStripe">
 
     <button onClick={() =>onHandleWrite()}> Write</button>
-    <button onClick={() =>onHandleReid()}> Read</button>
+    <button onClick={() =>onHandleRead()}> Read</button>
 
 </div>
 

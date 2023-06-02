@@ -2,8 +2,8 @@ import {RecoilRoot} from 'recoil'
 import {RedStripe} from './RedStripe'
 import { QueryClient,QueryClientProvider } from 'react-query'
 import './App.css'
-import {BlueStripe} from './BlueStripe'
-
+import {BlueStrips} from './BlueStrips'
+import {GreenStripe} from './GreenStripe'
 
 
 
@@ -18,7 +18,8 @@ return(
   {/* its props here queryClient */}
   <RecoilRoot>
   <RedStripe/>
-  <BlueStripe/>
+  <BlueStrips/>
+  <GreenStripe/>
   </RecoilRoot>
 </QueryClientProvider>
 

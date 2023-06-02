@@ -6,7 +6,7 @@ import {useRecoilValue} from 'recoil'
 
 
 
-export const BlueStrip = () => {
+export const BlueStrips = () => {
   //get the user name 
     const userName =useRecoilValue(userNameAtom)
     //passed in atom 
